@@ -1,51 +1,72 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+header {
+    background-color: #444;
+    color: white;
+    padding: 1em 0;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 1em;
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
 }
 
-.container {
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
     padding: 2em;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #444;
+    color: white;
 }
 
-label {
-    margin-bottom: 0.5em;
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
 }
 
-input {
+.movie-card {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
     margin-bottom: 1em;
-    padding: 0.5em;
-    font-size: 1em;
 }
 
-button {
-    padding: 0.5em;
-    font-size: 1em;
-    background-color: #333;
-    color: #fff;
+form button {
+    background-color: #444;
+    color: white;
+    padding: 0.5em 1em;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+form button:hover {
+    background-color: #333;
 }

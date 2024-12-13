@@ -1,4 +1,6 @@
-Flask
-Flask-SQLAlchemy
-Flask-Migrate
-Flask-Login
+flask
+flask-sqlalchemy
+flask-login
+flask-bcrypt
+flask-migrate
+psycopg2-binary
